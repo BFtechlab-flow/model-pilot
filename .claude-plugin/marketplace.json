@@ -1,0 +1,18 @@
+{
+  "name": "bftechlab",
+  "owner": {
+    "name": "BF Tech Lab",
+    "email": "bftechlabselling@gmail.com",
+    "url": "https://github.com/bftechlab"
+  },
+  "description": "Free Claude Code plugins by BF Tech Lab.",
+  "plugins": [
+    {
+      "name": "model-pilot",
+      "source": "./",
+      "description": "Picks the right Claude model and effort level for each task, then routes the work.",
+      "category": "productivity",
+      "tags": ["model-selection", "routing", "cost"]
+    }
+  ]
+}

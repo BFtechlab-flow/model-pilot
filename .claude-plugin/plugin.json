@@ -1,0 +1,24 @@
+{
+  "name": "model-pilot",
+  "displayName": "Model Pilot",
+  "version": "1.0.0",
+  "description": "Picks the right Claude model (Haiku, Sonnet, Opus, Fable) and effort level for each task, then routes the work to subagents on that model. Free and open source by BF Tech Lab.",
+  "author": {
+    "name": "BF Tech Lab",
+    "email": "bftechlabselling@gmail.com",
+    "url": "https://github.com/bftechlab"
+  },
+  "homepage": "https://github.com/bftechlab/model-pilot",
+  "repository": "https://github.com/bftechlab/model-pilot",
+  "license": "MIT",
+  "keywords": ["model-selection", "routing", "cost", "haiku", "sonnet", "opus", "fable", "subagents"],
+  "userConfig": {
+    "mode": {
+      "type": "string",
+      "title": "Routing mode",
+      "description": "economy: lean towards cheaper models. balanced: follow the rubric. quality: lean towards stronger models.",
+      "options": ["balanced", "economy", "quality"],
+      "default": "balanced"
+    }
+  }
+}
