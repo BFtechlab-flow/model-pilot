@@ -3,6 +3,7 @@ name: Release
 on:
   push:
     tags: ["v*"]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -12,10 +13,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Read version
+        id: v
+        run: echo "tag=v$(jq -r .version .claude-plugin/plugin.json)" >> "$GITHUB_OUTPUT"
       - name: Build skill ZIP
         run: bash scripts/package.sh
       - name: Publish release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ github.ref_type == 'tag' && github.ref_name || steps.v.outputs.tag }}
+          name: Model Pilot ${{ github.ref_type == 'tag' && github.ref_name || steps.v.outputs.tag }}
           files: dist/model-pilot.zip
-          generate_release_notes: true
+          body: |
+            **Claude app:** download `model-pilot.zip` below, then Customize → Skills → + → Upload a skill.
+
+            **Claude Code:**
+            ```
+            /plugin marketplace add BFtechlab-flow/model-pilot
+            /plugin install model-pilot@bftechlab
+            ```
+
+            Free and open source by [BF Tech Lab](https://github.com/BFtechlab-flow).
