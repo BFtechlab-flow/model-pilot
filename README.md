@@ -41,7 +41,7 @@ Modifiers adjust the score for batch work (cheaper), a previous failed attempt (
 ### Claude Code (recommended: plugin with routing subagents)
 
 ```
-/plugin marketplace add bftechlab/model-pilot
+/plugin marketplace add BFtechlab-flow/model-pilot
 /plugin install model-pilot@bftechlab
 ```
 
@@ -53,7 +53,7 @@ You'll be asked for a **routing mode**: `balanced` (default), `economy` or `qual
 
 ### Claude app (claude.ai, desktop, mobile)
 
-1. Download `model-pilot.zip` from the [latest release](https://github.com/bftechlab/model-pilot/releases/latest).
+1. Download `model-pilot.zip` from the [latest release](https://github.com/BFtechlab-flow/model-pilot/releases/latest).
 2. In Claude, make sure **Code execution and file creation** is on in **Settings → Capabilities**.
 3. Go to **Customize → Skills → + → Upload a skill** and pick the ZIP.
 4. Turn the skill on.
@@ -117,10 +117,10 @@ MIT. See [LICENSE](LICENSE).
 
 **Installazione su Claude Code:**
 ```
-/plugin marketplace add bftechlab/model-pilot
+/plugin marketplace add BFtechlab-flow/model-pilot
 /plugin install model-pilot@bftechlab
 ```
 
-**Installazione sull'app Claude:** scarica `model-pilot.zip` dall'[ultima release](https://github.com/bftechlab/model-pilot/releases/latest), poi **Personalizza → Skill → + → Carica una skill**.
+**Installazione sull'app Claude:** scarica `model-pilot.zip` dall'[ultima release](https://github.com/BFtechlab-flow/model-pilot/releases/latest), poi **Personalizza → Skill → + → Carica una skill**.
 
 Gratuito e open source, realizzato da **BF Tech Lab** (Bergamo). Per siti web, app e automazioni AI per la tua attività: **bftechlabselling@gmail.com**

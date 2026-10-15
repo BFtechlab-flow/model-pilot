@@ -6,10 +6,10 @@
   "author": {
     "name": "BF Tech Lab",
     "email": "bftechlabselling@gmail.com",
-    "url": "https://github.com/bftechlab"
+    "url": "https://github.com/BFtechlab-flow"
   },
-  "homepage": "https://github.com/bftechlab/model-pilot",
-  "repository": "https://github.com/bftechlab/model-pilot",
+  "homepage": "https://github.com/BFtechlab-flow/model-pilot",
+  "repository": "https://github.com/BFtechlab-flow/model-pilot",
   "license": "MIT",
   "keywords": ["model-selection", "routing", "cost", "haiku", "sonnet", "opus", "fable", "subagents"],
   "userConfig": {

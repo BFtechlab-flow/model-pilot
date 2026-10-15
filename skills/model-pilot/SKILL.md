@@ -5,7 +5,7 @@ license: MIT
 compatibility: Works in Claude Code (CLI, desktop, IDE) and in the Claude app (web, desktop, mobile). Subagent routing requires Claude Code.
 metadata:
   author: BF Tech Lab
-  homepage: https://github.com/bftechlab/model-pilot
+  homepage: https://github.com/BFtechlab-flow/model-pilot
   version: "1.0.0"
 ---
 
